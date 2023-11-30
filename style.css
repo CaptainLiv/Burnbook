@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Ysabeau SC:700|Skranji:400');
+
+/*
+--text: #040606;
+--background: #f9fbfb;
+--primary: #af747f;
+--secondary: #e5e1d2;
+--accent: #955661;
+
+*/
+
+*{
+    background-color:inherit;
+}
+
+body{
+    background-color: #f9fbfb;
+}
+
+
+.menu{
+    display: grid;
+    grid-template-columns: 2fr 1fr 6fr 3fr;
+    column-gap: 5px;
+    margin-bottom: 5px;
+}
+
+.menu_item{
+    background-color:#e5e1d2;
+}
+
+#lg{
+    text-align: center;
+}
+#prfl{
+    text-align: right;
+}
+
+.rezept{
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "bild zutaten"
+        "schritte schritte";
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.rezept_item{
+    border-radius: 10px;
+    text-align: center;
+    background-color: #af747f;
+    justify-items: center;
+}
+
+#bld{
+    grid-area: bild;
+    background-color: #f9fbfb;
+
+}
+#zttn{
+    grid-area: zutaten;
+}
+#rzpt{
+    grid-area: schritte;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    accent-color: #955661;
+}
+tr:nth-child(odd) {
+    background: #955661;
+    accent-color: #af747f;
+  }
+
+
+img{
+    height:auto;
+    width: 100%;
+    border-radius: inherit;
+}
